@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Declarar variables CSS */
+:root {
+    /* Paleta de colores */
+    --color1:#fff; /* Color blanco */
+    --color2:#344856; /* Color gris oscuro */
+    --color3: #2bbfda; /* Color principal (turquesa) */
+    --color4: #333333; /* Color de fondo de pie */
+    --color5: #dfdfdf; /* Color gris claro */
+    --color6: #20364633; /* Color del sombra de imagen */
+
+    /* Tipografías */
+    --fuente1: "Poppins", sans-serif; /* Tipografía principal */
+    --fuente2: "Space Grotesk", sans-serif; /* Tipografía para títulos */
+}
+
+/* Selector universal de elementos HTML */
+* {
+    /* Eliminan los espacios predeterminados del navegador */
+    margin: 0;
+    padding: 0;
+
+    /* Evitar que se modifique el tamaño de la caja cuando
+    le agregas padding o border */
+    box-sizing: border-box;
+}
+
+/* Selectores de estilo de tipo HTML */
+html {
+    /* Suavizar el efecto del desplazamiento (scroll) */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: var(--fuente1);
+    line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente2);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+img, video, iframe {
+    /* Elimina el espacio predeterminado que aparece debajo del objeto */
+    display: block;
+}
+
+/* Selectores de estilo de tipo ID */
+#top-bar {
+    background-color: var(--color4);
+    color: var(--color1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9em;
+}
+
+#fondoimg {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cabecera {
+    background-color: var(--color1);
+    color: var(--color2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#especialistas {
+    background-color: var(--color1);
+    color: var(--color2);
+    padding-top: 120px;
+}
+
+#nosotros {
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
+#servicios {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+#clientes {
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
+#pie {
+    background-color: var(--color4);
+    color: var(--color5);
+}
+
+#video-libreta{
+    background-color: var(--color5);
+}
+
+/* Selectores de estilo de tipo CLASS */
+.padded {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.destacado {
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.campo {
+    display: flex;
+    justify-content: center;
+}
+
+.edt {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-color: var(--color3);
+    border-radius: 5px;
+}
+
+.btn {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-color: var(--color3);
+    border-radius: 5px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajusta el tamaño de la imagen al ancho de su caja padre (responsive) */
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.row {    
+    display: flex; /* Habilitar flexbox */
+    flex-direction: row; /* Alinear los elementos del flexbox en fila */
+    flex-wrap: wrap; /* Permite multifila dentro de la caja flexbox */
+
+    /* Anular el padding-left y el padding-right de la primera y última
+    caja hijo, respectivamente */
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col {
+    /* Permiten que las columnas tengan el mismo ancho */
+    flex-basis: 0;
+    flex-grow: 1;
+
+    /* Espacio entre columnas */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-20 {
+    flex-basis: 20%;
+    max-width: 20%;
+}
+
+.col-25 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.col-30 {
+    flex-basis: 30%;
+    max-width: 30%;
+}
+
+.col-33 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+
+.col-40 {
+    flex-basis: 40%;
+    max-width: 40%;
+}
+
+.col-50 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-60 {
+    flex-basis: 60%;
+    max-width: 60%;
+}
+
+.col-66 {
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+}
+
+.col-70 {
+    flex-basis: 70%;
+    max-width: 70%;
+}
+
+.col-75 {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.col-80 {
+    flex-basis: 80%;
+    max-width: 80%;
+}
+
+.col-100 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.alinear-vertical {
+    align-items: center;
+}
+
+.border-col {
+    border: 1px solid var(--color5);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 20px;
+}
+
+.shadow-img {
+    box-shadow: 0 15px 20px 0 var(--color6);
+}
+
+.radius-img {
+    /* border-radius: 80px 0px 81px 0px; */
+    /* border-radius: 200px 200px 200px 200px; */
+    border-radius: 50%;
+}
+
+.nav-logo {
+    width: 150px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Alineación en fila de flexbox */
+    align-items: center; /* Alineación en columna de flexbox */
+}
+
+.nav-menu {
+    list-style-type: none; /* Quitar las viñetas */
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu-item {
+    margin-left: 10px;
+}
+
+.nav-menu-link {
+    color: var(--color1);
+    text-decoration: none; /* Quitar el subrayado */
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-menu-link:hover {
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
+.fijar-cabecera {
+    position: sticky;
+    top:0px; /* Parte superior del viewport (ventana) */
+    z-index: 100; /* Para que la caja aparezca siempre encima de las otras */
+}
+
+.scroll-up {
+    /* Posicionar en el viewport (ventana del navegador) */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    /* Formato */
+    width: 45px;
+    height: 45px;
+    line-height: 45px; /* Centrar el texto verticalmente dentro del botón */
+    text-align: center; /* Centrar el texto horizontalmente */
+    background-color: var(--color2);
+    color: var(--color5);
+    border: 1px solid var(--color5);
+}
+
+.banner-padre {
+    position: relative;
+}
+
+.banner-hijo {
+    position: absolute;
+
+    /* Coordenadas de posicionamiento */
+    /* top: 200px; */
+    bottom: -100px;
+    /* right: 0px; */
+    left: calc(50% - 300px);
+
+    /* Formato */
+    width: 600px;
+    padding: 25px;
+    background-color: var(--color4);
+    color: var(--color1);
+}
+
+.row-justifycontent {
+    justify-content: space-between;
+}
+
+.row-topbar-link {
+    color: var(--color1);
+    text-decoration: none; /* Quitar el subrayado */
+    margin-right: 10px;
+}
+
+.row-topbar-icons {
+    font-size: 1.3em;
+}
+
+/* Ajuste responsive para el video */
+.video-fluid {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+/* Ajuste responsive para el mapa */
+.mapa-fluid {
+    width: 100%;
+}
